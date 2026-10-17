@@ -2,6 +2,9 @@
 
 This repository demonstrates using IAM Roles for Service Accounts (OIDC federation) from a local `Kind` cluster to read encrypted strings from AWS Parameter Store for free.
 
+> [!TIP]
+> There's a full walkthrough of the idea and each step in the accompanying article: [EKS-Style IAM Roles on Any Kubernetes Cluster — Without EKS](https://medium.com/@steve.atkinson_15525/eks-style-iam-roles-on-any-kubernetes-cluster-without-eks-33bc39c3a3c6).
+
 ## Motivation
 
 In my homelab, `cert-manager` issues TLS certificates for `Traefik` from Let's Encrypt using `DNS-01` challenges. That requires a Cloudflare API token to be available in the cluster as a Kubernetes secret.
